@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return view('vidol.include.html5', ['title' => '首頁']);
+});
+Route::get('/header', function () {
+    //return view('welcome');
+    return view('vidol.include.header', ['title' => '首頁']);
+});
+Route::get('/phpinfo', function () {
+    phpinfo();
 });
