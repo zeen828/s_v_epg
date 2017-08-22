@@ -15,9 +15,9 @@ Route::get('/', function () {
     //return view('welcome');
     return view('vidol.include.html5', ['title' => '首頁']);
 });
-Route::get('/header', function () {
+Route::get('/home', function () {
     //return view('welcome');
-    return view('vidol.include.header', ['title' => '首頁']);
+    return view('vidol.home', ['title' => '首頁']);
 });
 Route::get('/phpinfo', function () {
     phpinfo();
